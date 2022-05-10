@@ -104,5 +104,7 @@ void setup(void)
     // Pines como entradas y salidas
     GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3);                       // Pines 1, 2 y 3 del puerto F como salida
     GPIOPinTypeGPIOInput(GPIO_PORTF_BASE, GPIO_PIN_4);
+
+    // Configuración de los pines como input
     GPIOPadConfigSet(GPIO_PORTF_BASE, GPIO_PIN_4, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);        // Pin 4 como entrada con weak pull up
 }
